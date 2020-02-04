@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+admin.site.site_header = "UMSRA Admin"
+admin.site.site_title = "UMSRA Admin Portal"
+admin.site.index_title = "Welcome to UMSRA Researcher Portal"
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'posts/', include('posts.urls')),
